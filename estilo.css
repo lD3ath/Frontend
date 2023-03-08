@@ -1,0 +1,364 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: helvetica;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 24px;
+  }
+
+  .ancho  {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  header {
+    background-color: #FFF9F1;
+    border-top: 5px #FF3281 solid;
+    padding: 10px;
+  }
+
+  .contenedor_papa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logospa {
+    width: 200px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .logoredes {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .iconoredesbebe {
+    font-size: 35px;
+    color: #333;
+    transition: all 0.5s;
+  }
+
+  .iconoredesbebe:hover {
+    color: #800000;
+  }
+
+  nav {
+    border: 3px #333 solid;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  nav a {
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .imagenfondo {
+    background-image: url(imagenes/fondopiedras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .caja1 {
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .caja1 h2 {
+    font-size: 30px;
+  }
+
+  .caja1 p {
+    font-size: 20px;
+  }
+
+  .btn_rosado {
+    background-color: #FF3281;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+  }
+
+  .borderosado {
+    border: 1px #FF3281 solid;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    color: white;
+  }
+
+  .caja2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+  }
+
+  .caja2 p {
+    text-align: left;
+    line-height: 35px;
+  }
+
+  .caja2 article {
+    max-width: 500px;
+  }
+
+  .caja h3 {
+    font-size: 22px;
+    padding: 20px 0px;
+  }
+
+  .caja2 p {
+    padding-top: 10px;
+    line-height: 30px;
+  }
+
+  .caja2 figure {
+    width: 45%;
+  }
+
+  .caja2 img {
+    width: 100%;
+  }
+
+  .caja3 {
+    background-color: #FFF9F1;
+    max-width: 100%;
+  }
+
+  .caja3 h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .contenedor_puestos {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contenedor_puestos figure {
+    width: 48%;
+    padding: 0px;
+  }
+
+  .contenedor_puestos figure img {
+    border-radius: 20px;
+    width: 100%;
+
+  }
+
+  .infopuestos {
+    max-width: 45%;
+  }
+
+  .infopuestos article {
+    padding: 15px;
+  }
+
+  .info_servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+
+  }
+
+  .info_servicios article {
+    background-color: #FFE8A4;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .info_servicios figure {
+    max-width: 150px;
+    margin: auto;
+  }
+
+  .info_servicios figure img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px white solid;
+  }
+
+  .info_servicios p {
+    text-align: center;
+  }
+
+  .info_servicios h3 {
+    font-size: 18px;
+  }
+
+  .contenedor_servicios {
+    background-color: #FFF9F1;
+    padding: 20px;
+  }
+
+  footer {
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 10px #800000 solid;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #800000;
+    
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 630px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      display: block;
+      width: 100%;
+      border-bottom: 1px #333 dotted;
+    }
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .contenedor_papa {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logoredes {
+      padding-bottom: 15px;
+    }
+
+    .caja2 figure {
+      width: 95%;
+    }
+
+    .caja2 img {
+      width: 95%;
+      margin-top: 20px;
+    }
+
+    .caja2 h3 {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .caja2 p {
+      text-align: center;
+    }
+
+    .infopuestos {
+      max-width: 100%;
+    }
+
+    .contenedor_puestos figure {
+      width: 100%;
+      padding: 0px;
+    }
+
+    .info_servicios {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .info_servicios article {
+      max-width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    .btn_rosado {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .caja2 {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .caja2 figure {
+      width: 70%;
+    }
+
+    .caja2 article {
+      width: 95%;
+      margin-top: 20px;
+    }
+
+    .contenedor_puestos {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .contenedor_puestos figure {
+      width: 60%;
+      padding: 0px;
+    }
+
+    .infopuestos {
+      max-width: 100%;
+    }
+
+    .info_servicios {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .info_servicios article {
+      max-width: 100%;
+    }
+  }
